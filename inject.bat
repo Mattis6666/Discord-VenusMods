@@ -3,19 +3,18 @@
 echo Injecting VenusMods into your Discord install...
 
 rem Copy Injector
-copy /y dist/injector/core rem TODO PATHHERE
-copy /y dist/injector/index.js rem TODO PATHHERE
+xcopy /iyq "dist\injector\venus_mods" "%APPDATA%\discord\0.0.306\modules\discord_desktop_core\venus_mods"
+copy /y "dist\injector\index.js" "%APPDATA%\discord\0.0.306\modules\discord_desktop_core\index.js"
 if %ERRORLEVEL% EQU 0 (echo Successfully moved the injector) else (
     echo Failed to move the injector.
     exit 1
 )
 
 rem Copy Base 
-copy /y dist/base rem TODO PATHHERE
-if %ERRORLEVEL% EQU 0 (echo Successfully moved the base) else (
-    echo Failed to move the base.
-    exit 1
-)
+rem copy /y dist\base rem TODO PATHHERE
+rem if %ERRORLEVEL% EQU 0 (echo Successfully moved the base) else (
+rem     echo Failed to move the base.
+rem     exit 1
+rem )
 
 echo Successfully injected VenusMods!
-exit 0
