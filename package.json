@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@types/node": "^13.13.4",
+    "typescript": "^3.8.3"
+  },
+  "name": "discord_venus_mods",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {},
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "VenNeptury",
+  "description": ""
+}
